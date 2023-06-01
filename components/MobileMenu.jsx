@@ -33,7 +33,7 @@ const MenuMobile = ({ setMobileMenu,setShowCatMenu,showCatMenu }) => {
           {item?.subMenu ? (
             <li
               className="cursor-pointer py-4 px-5 border-b flex flex-col relative"
-              onClick={()=>{setShowCatMenu(!showCatMenu)}}
+              onClick={()=>{setShowCatMenu(!showCatMenu) }}
             >
               <div className="flex justify-between items-center">
                 {item.name}
