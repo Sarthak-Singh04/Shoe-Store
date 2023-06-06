@@ -1,13 +1,12 @@
 import Link from "next/link";
 import React from "react";
 import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
-import Wrapping from "./Wrapping";
-
+import Wrapper from "./Wrapper";
 
 const Footer = () => {
     return (
         <footer className="bg-black text-white pt-14 pb-3">
-            <Wrapping className="flex justify-between flex-col md:flex-row gap-[50px] md:gap-0">
+            <Wrapper className="flex justify-between flex-col md:flex-row gap-[50px] md:gap-0">
                 {/* LEFT START */}
                 <div className="flex gap-[50px] md:gap-[75px] lg:gap-[100px] flex-col md:flex-row">
                     {/* MENU START */}
@@ -103,8 +102,8 @@ const Footer = () => {
                     </div>
                 </div>
                 {/* RIGHT END */}
-            </Wrapping>
-            <Wrapping className="flex justify-between mt-10 flex-col md:flex-row gap-[10px] md:gap-0">
+            </Wrapper>
+            <Wrapper className="flex justify-between mt-10 flex-col md:flex-row gap-[10px] md:gap-0">
                 {/* LEFT START */}
                 <div className="text-[12px] text-white/[0.5] hover:text-white cursor-pointer text-center md:text-left">
                     © 2023 Nike, Inc. All Rights Reserved
@@ -127,7 +126,7 @@ const Footer = () => {
                     </div>
                 </div>
                 {/* RIGHT END */}
-            </Wrapping>
+            </Wrapper>
         </footer>
     );
 };

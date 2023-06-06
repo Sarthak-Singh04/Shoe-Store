@@ -7,8 +7,7 @@ import { BiArrowBack } from "react-icons/bi";
 
 const HeroBanner = () => {
     return (
-        
-        <div className="relative -z-10 text-white text-[20px] w-full max-w-[1300px] mx-auto">
+        <div className="relative text-white text-[20px] w-full max-w-[1360px] mx-auto">
             <Carousel
                 autoPlay={true}
                 infiniteLoop={true}
@@ -26,7 +25,7 @@ const HeroBanner = () => {
                 renderArrowNext={(clickHandler, hasNext) => (
                     <div
                         onClick={clickHandler}
-                        className=" absolute right-0 bottom-0 w-[30px] md:w-[50px] h-[30px] md:h-[50px] bg-black z-4 flex items-center justify-center cursor-pointer hover:opacity-90"
+                        className="absolute right-0 bottom-0 w-[30px] md:w-[50px] h-[30px] md:h-[50px] bg-black z-10 flex items-center justify-center cursor-pointer hover:opacity-90"
                     >
                         <BiArrowBack className="rotate-180 text-sm md:text-lg" />
                     </div>
