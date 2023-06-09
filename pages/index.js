@@ -42,9 +42,16 @@ export default function Home({ products }) {
 }
 
 export async function getStaticProps() {
-    const products = await fetchDataFromApi("/api/products?populate=*");
-
-    return {
+    try {
+      const products = await fetchDataFromApi("/api/products?populate=*");
+      return {
         props: { products },
-    };
-}
+      };
+    } catch (error) {
+      console.error("Error fetching data from the Strapi API:", error);
+      return {
+        props: { products: null }, // Set products to null or handle the error state accordingly
+      };
+    }
+  }
+  

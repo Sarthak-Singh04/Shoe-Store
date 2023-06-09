@@ -11,7 +11,10 @@ export default function App({ Component, pageProps }) {
     return (
         <>
             <Head>
+
                 <title>Nike clone</title>
+
+
                 <meta
                     name="description"
                     content="Give your wings"
